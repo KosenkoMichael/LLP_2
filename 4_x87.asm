@@ -17,12 +17,12 @@ main:
     
     fmul; x*log2e
     
-    f2xm1 ; e^
+    f2xm1 ; 2^
     fld1
     fadd
     
     fld1
-    fdiv st0, st1
+    fdiv st0, st1 ; e^(-x) = 1/e^x
     
     fsub st1, st0
     
